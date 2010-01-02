@@ -8,6 +8,7 @@ CPP_SRCS += \
 ../HardwareSerial.cpp \
 ../Print.cpp \
 ../WMath.cpp \
+../communication.cpp \
 ../global.cpp \
 ../main.cpp \
 ../robot.cpp 
@@ -29,6 +30,7 @@ OBJS += \
 ./Print.o \
 ./WInterrupts.o \
 ./WMath.o \
+./communication.o \
 ./global.o \
 ./main.o \
 ./motorcontrol.o \
@@ -57,6 +59,7 @@ CPP_DEPS += \
 ./HardwareSerial.d \
 ./Print.d \
 ./WMath.d \
+./communication.d \
 ./global.d \
 ./main.d \
 ./robot.d 
