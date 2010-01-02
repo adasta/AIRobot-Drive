@@ -1,0 +1,971 @@
+Archive member included because of file (symbol)
+
+/usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_mulsi3.o)
+                              ./HardwareSerial.o (__mulsi3)
+/usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_divmodhi4.o)
+                              ./HardwareSerial.o (__divmodhi4)
+/usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_udivmodsi4.o)
+                              ./HardwareSerial.o (__udivmodsi4)
+/usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_divmodsi4.o)
+                              ./WMath.o (__divmodsi4)
+/usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_exit.o)
+                              /usr/lib/gcc/avr/4.3.3/../../../avr/lib/avr5/crtm168.o (exit)
+/usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_copy_data.o)
+                              ./HardwareSerial.o (__do_copy_data)
+/usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_clear_bss.o)
+                              ./HardwareSerial.o (__do_clear_bss)
+/usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_ctors.o)
+                              ./HardwareSerial.o (__do_global_ctors)
+/usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_fixunssfsi.o)
+                              ./Print.o (__fixunssfsi)
+/usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_addsub_sf.o)
+                              ./Print.o (__subsf3)
+/usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_mul_sf.o)
+                              ./Print.o (__mulsf3)
+/usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_div_sf.o)
+                              ./Print.o (__divsf3)
+/usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_ge_sf.o)
+                              /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_fixunssfsi.o) (__gesf2)
+/usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_lt_sf.o)
+                              ./Print.o (__ltsf2)
+/usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_si_to_sf.o)
+                              ./Print.o (__floatsisf)
+/usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_sf_to_si.o)
+                              ./Print.o (__fixsfsi)
+/usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_thenan_sf.o)
+                              /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_addsub_sf.o) (__thenan_sf)
+/usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_usi_to_sf.o)
+                              ./Print.o (__floatunsisf)
+/usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_udivmodhi4.o)
+                              /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_divmodhi4.o) (__udivmodhi4)
+/usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_prologue.o)
+                              /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_addsub_sf.o) (__prologue_saves__)
+/usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_epilogue.o)
+                              /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_addsub_sf.o) (__epilogue_restores__)
+/usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_tablejump.o)
+                              /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_ctors.o) (__tablejump__)
+/usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_clzsi2.o)
+                              /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_si_to_sf.o) (__clzsi2)
+/usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_pack_sf.o)
+                              /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_addsub_sf.o) (__pack_f)
+/usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_unpack_sf.o)
+                              /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_addsub_sf.o) (__unpack_f)
+/usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_fpcmp_parts_sf.o)
+                              /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_ge_sf.o) (__fpcmp_parts_f)
+/usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_clz.o)
+                              /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_clzsi2.o) (__clz_tab)
+/usr/lib/gcc/avr/4.3.3/../../../avr/lib/avr5/libc.a(random.o)
+                              ./WMath.o (random)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x800100
+LOAD /usr/lib/gcc/avr/4.3.3/../../../avr/lib/avr5/crtm168.o
+LOAD ./HardwareSerial.o
+LOAD ./Print.o
+LOAD ./WInterrupts.o
+LOAD ./WMath.o
+LOAD ./main.o
+LOAD ./motorcontrol.o
+LOAD ./pins_arduino.o
+LOAD ./pwm.o
+LOAD ./wiring.o
+LOAD ./wiring_analog.o
+LOAD ./wiring_digital.o
+LOAD ./wiring_pulse.o
+LOAD ./wiring_shift.o
+LOAD /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a
+LOAD /usr/lib/gcc/avr/4.3.3/../../../avr/lib/avr5/libm.a
+LOAD /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a
+LOAD /usr/lib/gcc/avr/4.3.3/../../../avr/lib/avr5/libc.a
+LOAD /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000     0x2414
+ *(.vectors)
+ .vectors       0x00000000       0x68 /usr/lib/gcc/avr/4.3.3/../../../avr/lib/avr5/crtm168.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+ .progmem.data  0x00000068       0x5a ./pins_arduino.o
+                0x00000068                port_to_mode_PGM
+                0x00000086                digital_pin_to_port_PGM
+                0x0000009a                digital_pin_to_bit_mask_PGM
+                0x00000072                port_to_output_PGM
+                0x0000007c                port_to_input_PGM
+                0x000000ae                digital_pin_to_timer_PGM
+                0x000000c2                . = ALIGN (0x2)
+                0x000000c2                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x000000c2        0x0 linker stubs
+ *(.trampolines*)
+                0x000000c2                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x000000c2                __ctors_start = .
+ *(.ctors)
+ .ctors         0x000000c2        0x2 ./HardwareSerial.o
+                0x000000c4                __ctors_end = .
+                0x000000c4                __dtors_start = .
+ *(.dtors)
+                0x000000c4                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x000000c4        0x0 /usr/lib/gcc/avr/4.3.3/../../../avr/lib/avr5/crtm168.o
+                0x000000c4                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x000000c4        0xc /usr/lib/gcc/avr/4.3.3/../../../avr/lib/avr5/crtm168.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x000000d0       0x16 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_copy_data.o)
+                0x000000d0                __do_copy_data
+ .init4         0x000000e6       0x10 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_clear_bss.o)
+                0x000000e6                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ .init6         0x000000f6       0x16 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_ctors.o)
+                0x000000f6                __do_global_ctors
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x0000010c        0x8 /usr/lib/gcc/avr/4.3.3/../../../avr/lib/avr5/crtm168.o
+ *(.init9)
+ *(.text)
+ .text          0x00000114        0x4 /usr/lib/gcc/avr/4.3.3/../../../avr/lib/avr5/crtm168.o
+                0x00000114                __vector_22
+                0x00000114                __vector_24
+                0x00000114                __vector_12
+                0x00000114                __bad_interrupt
+                0x00000114                __vector_6
+                0x00000114                __vector_3
+                0x00000114                __vector_23
+                0x00000114                __vector_25
+                0x00000114                __vector_11
+                0x00000114                __vector_13
+                0x00000114                __vector_17
+                0x00000114                __vector_19
+                0x00000114                __vector_7
+                0x00000114                __vector_5
+                0x00000114                __vector_4
+                0x00000114                __vector_9
+                0x00000114                __vector_21
+                0x00000114                __vector_15
+                0x00000114                __vector_8
+                0x00000114                __vector_14
+                0x00000114                __vector_10
+                0x00000114                __vector_20
+ .text          0x00000118      0x446 ./HardwareSerial.o
+                0x00000434                HardwareSerial::available()
+                0x000004c4                HardwareSerial::write(unsigned char)
+                0x00000252                HardwareSerial::begin(long)
+                0x000004ac                HardwareSerial::flush()
+                0x000001f2                HardwareSerial::HardwareSerial(ring_buffer*, unsigned char volatile*, unsigned char volatile*, unsigned char volatile*, unsigned char volatile*, unsigned char volatile*, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char)
+                0x00000192                HardwareSerial::HardwareSerial(ring_buffer*, unsigned char volatile*, unsigned char volatile*, unsigned char volatile*, unsigned char volatile*, unsigned char volatile*, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char)
+                0x0000045c                HardwareSerial::read()
+                0x00000118                __vector_18
+ .text          0x0000055e      0x498 ./Print.o
+                0x000005fc                Print::println()
+                0x000007ce                Print::print(unsigned int)
+                0x000009d8                Print::print(double)
+                0x00000680                Print::printNumber(unsigned long, unsigned char)
+                0x0000058e                Print::write(unsigned char const*, unsigned int)
+                0x000007b8                Print::println(unsigned long)
+                0x0000085a                Print::print(int)
+                0x0000062a                Print::println(char)
+                0x0000055e                Print::write(char const*)
+                0x000008ca                Print::printFloat(double, unsigned char)
+                0x00000660                Print::println(unsigned char)
+                0x000005cc                Print::print(unsigned char)
+                0x000007b0                Print::print(unsigned long)
+                0x0000064a                Print::println(char const*)
+                0x000005dc                Print::print(char)
+                0x0000086a                Print::println(int)
+                0x000009e0                Print::println(double)
+                0x00000844                Print::println(long)
+                0x000005ec                Print::print(char const*)
+                0x000007f6                Print::print(long)
+                0x000008b4                Print::println(long, int)
+                0x0000088a                Print::print(long, int)
+                0x000007da                Print::println(unsigned int)
+ .text          0x000009f6      0x120 ./WInterrupts.o
+                0x00000a62                __vector_1
+                0x000009f6                attachInterrupt
+                0x00000a3c                detachInterrupt
+                0x00000abc                __vector_2
+ .text          0x00000b16      0x132 ./WMath.o
+                0x00000baa                makeWord(unsigned char, unsigned char)
+                0x00000bfc                random(long, long)
+                0x00000c38                randomSeed(unsigned int)
+                0x00000b16                map(long, long, long, long, long)
+                0x00000ba8                makeWord(unsigned int)
+                0x00000bb8                random(long)
+ .text          0x00000c48       0x2a ./main.o
+                0x00000c48                __cxa_pure_virtual
+                0x00000c4c                main
+ .text          0x00000c72      0x10a ./motorcontrol.o
+                0x00000cf6                initMotor2
+                0x00000c90                motor2Reverse
+                0x00000d46                motor1SetSpeed
+                0x00000d08                initMotor1
+                0x00000ca8                motor2Forward
+                0x00000d2e                motor1Forward
+                0x00000c72                limitSpeedMax
+                0x00000d16                motor1Reverse
+                0x00000cc0                motor2SetSpeed
+ .text          0x00000d7c        0x0 ./pins_arduino.o
+ .text          0x00000d7c       0x80 ./pwm.o
+                0x00000dbe                nonInvertPWM1
+                0x00000ddc                nonInvertPWM2
+                0x00000dca                invertPWM2
+                0x00000df2                dutyCyclePWM2
+                0x00000d7c                initPWM
+                0x00000de8                dutyCyclePWM1
+                0x00000dac                invertPWM1
+ .text          0x00000dfc      0x1fe ./wiring.o
+                0x00000f86                init
+                0x00000ec0                micros
+                0x00000f16                delay
+                0x00000dfc                __vector_16
+                0x00000ea4                millis
+                0x00000f6a                delayMicroseconds
+ .text          0x00000ffa       0xf4 ./wiring_analog.o
+                0x0000103c                analogWrite
+                0x00000ffa                analogReference
+                0x00001000                analogRead
+ .text          0x000010ee      0x178 ./wiring_digital.o
+                0x000011c8                digitalRead
+                0x0000112e                digitalWrite
+                0x000010ee                pinMode
+ .text          0x00001266       0xee ./wiring_pulse.o
+                0x00001266                pulseIn
+ .text          0x00001354       0x82 ./wiring_shift.o
+                0x00001354                shiftOut
+ .text          0x000013d6        0x0 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_mulsi3.o)
+ .text          0x000013d6        0x0 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_divmodhi4.o)
+ .text          0x000013d6        0x0 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_udivmodsi4.o)
+ .text          0x000013d6        0x0 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_divmodsi4.o)
+ .text          0x000013d6        0x0 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_exit.o)
+ .text          0x000013d6        0x0 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_copy_data.o)
+ .text          0x000013d6        0x0 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_clear_bss.o)
+ .text          0x000013d6        0x0 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_ctors.o)
+ .text          0x000013d6       0x58 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_fixunssfsi.o)
+                0x000013d6                __fixunssfsi
+ .text          0x0000142e      0x354 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_addsub_sf.o)
+                0x000016c6                __subsf3
+                0x00001728                __addsf3
+ .text          0x00001782      0x1f4 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_mul_sf.o)
+                0x00001782                __mulsf3
+ .text          0x00001976      0x158 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_div_sf.o)
+                0x00001976                __divsf3
+ .text          0x00001ace       0x60 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_ge_sf.o)
+                0x00001ace                __gesf2
+ .text          0x00001b2e       0x60 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_lt_sf.o)
+                0x00001b2e                __ltsf2
+ .text          0x00001b8e       0xbc /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_si_to_sf.o)
+                0x00001b8e                __floatsisf
+ .text          0x00001c4a       0xa8 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_sf_to_si.o)
+                0x00001c4a                __fixsfsi
+ .text          0x00001cf2        0x0 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_thenan_sf.o)
+ .text          0x00001cf2       0xf2 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_usi_to_sf.o)
+                0x00001cf2                __floatunsisf
+ .text          0x00001de4        0x0 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_udivmodhi4.o)
+ .text          0x00001de4        0x0 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_prologue.o)
+ .text          0x00001de4        0x0 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_epilogue.o)
+ .text          0x00001de4        0x0 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_tablejump.o)
+ .text          0x00001de4       0x9e /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_clzsi2.o)
+                0x00001de4                __clzsi2
+ .text          0x00001e82      0x1aa /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_pack_sf.o)
+                0x00001e82                __pack_f
+ .text          0x0000202c       0xf0 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_unpack_sf.o)
+                0x0000202c                __unpack_f
+ .text          0x0000211c       0xb2 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_fpcmp_parts_sf.o)
+                0x0000211c                __fpcmp_parts_f
+ .text          0x000021ce        0x0 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_clz.o)
+ .text          0x000021ce       0xc2 /usr/lib/gcc/avr/4.3.3/../../../avr/lib/avr5/libc.a(random.o)
+                0x00002274                random
+                0x0000226e                random_r
+                0x0000227e                srandom
+                0x00002290                . = ALIGN (0x2)
+ *(.text.*)
+ .text.libgcc   0x00002290       0x3e /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_mulsi3.o)
+                0x00002290                __mulsi3
+ .text.libgcc   0x000022ce       0x26 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_divmodhi4.o)
+                0x000022ce                __divmodhi4
+                0x000022ce                _div
+ .text.libgcc   0x000022f4       0x44 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_udivmodsi4.o)
+                0x000022f4                __udivmodsi4
+ .text.libgcc   0x00002338       0x36 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_divmodsi4.o)
+                0x00002338                __divmodsi4
+ .text.libgcc   0x0000236e        0x0 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_exit.o)
+ .text.libgcc   0x0000236e        0x0 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_copy_data.o)
+ .text.libgcc   0x0000236e        0x0 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_clear_bss.o)
+ .text.libgcc   0x0000236e        0x0 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_ctors.o)
+ .text.libgcc   0x0000236e       0x28 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_udivmodhi4.o)
+                0x0000236e                __udivmodhi4
+ .text.libgcc   0x00002396       0x38 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_prologue.o)
+                0x00002396                __prologue_saves__
+ .text.libgcc   0x000023ce       0x36 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_epilogue.o)
+                0x000023ce                __epilogue_restores__
+ .text.libgcc   0x00002404        0xc /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_tablejump.o)
+                0x00002408                __tablejump__
+                0x00002404                __tablejump2__
+                0x00002410                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00002410        0x0 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_exit.o)
+                0x00002410                exit
+                0x00002410                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00002410        0x4 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_exit.o)
+ *(.fini0)
+                0x00002414                _etext = .
+
+.data           0x00800100      0x124 load address 0x00002414
+                0x00800100                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800100        0x0 /usr/lib/gcc/avr/4.3.3/../../../avr/lib/avr5/crtm168.o
+ .data          0x00800100        0xa ./HardwareSerial.o
+                0x00800100                vtable for HardwareSerial
+ .data          0x0080010a        0xc ./Print.o
+                0x0080010c                vtable for Print
+ .data          0x00800116        0x0 ./WInterrupts.o
+ .data          0x00800116        0x0 ./WMath.o
+ .data          0x00800116        0x0 ./main.o
+ .data          0x00800116        0x0 ./motorcontrol.o
+ .data          0x00800116        0x0 ./pins_arduino.o
+ .data          0x00800116        0x0 ./pwm.o
+ .data          0x00800116        0x0 ./wiring.o
+ .data          0x00800116        0x1 ./wiring_analog.o
+                0x00800116                analog_reference
+ .data          0x00800117        0x0 ./wiring_digital.o
+ .data          0x00800117        0x0 ./wiring_pulse.o
+ .data          0x00800117        0x0 ./wiring_shift.o
+ .data          0x00800117        0x0 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_mulsi3.o)
+ .data          0x00800117        0x0 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_divmodhi4.o)
+ .data          0x00800117        0x0 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_udivmodsi4.o)
+ .data          0x00800117        0x0 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_divmodsi4.o)
+ .data          0x00800117        0x0 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_exit.o)
+ .data          0x00800117        0x0 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_copy_data.o)
+ .data          0x00800117        0x0 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_clear_bss.o)
+ .data          0x00800117        0x0 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_ctors.o)
+ .data          0x00800117        0x0 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_fixunssfsi.o)
+ .data          0x00800117        0x0 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_addsub_sf.o)
+ .data          0x00800117        0x0 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_mul_sf.o)
+ .data          0x00800117        0x0 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_div_sf.o)
+ .data          0x00800117        0x0 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_ge_sf.o)
+ .data          0x00800117        0x0 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_lt_sf.o)
+ .data          0x00800117        0x0 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_si_to_sf.o)
+ .data          0x00800117        0x0 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_sf_to_si.o)
+ .data          0x00800117        0x8 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_thenan_sf.o)
+                0x00800117                __thenan_sf
+ .data          0x0080011f        0x0 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_usi_to_sf.o)
+ .data          0x0080011f        0x0 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_udivmodhi4.o)
+ .data          0x0080011f        0x0 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_prologue.o)
+ .data          0x0080011f        0x0 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_epilogue.o)
+ .data          0x0080011f        0x0 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_tablejump.o)
+ .data          0x0080011f        0x0 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_clzsi2.o)
+ .data          0x0080011f        0x0 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_pack_sf.o)
+ .data          0x0080011f        0x0 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_unpack_sf.o)
+ .data          0x0080011f        0x0 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_fpcmp_parts_sf.o)
+ .data          0x0080011f      0x100 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_clz.o)
+                0x0080011f                __clz_tab
+ .data          0x0080021f        0x4 /usr/lib/gcc/avr/4.3.3/../../../avr/lib/avr5/libc.a(random.o)
+ *(.data*)
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x00800224                . = ALIGN (0x2)
+ *fill*         0x00800223        0x1 00
+                0x00800224                _edata = .
+                0x00800224                PROVIDE (__data_end, .)
+
+.bss            0x00800224       0xa4 load address 0x00002538
+                0x00800224                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x00800224        0x0 /usr/lib/gcc/avr/4.3.3/../../../avr/lib/avr5/crtm168.o
+ .bss           0x00800224       0x97 ./HardwareSerial.o
+                0x00800224                rx_buffer
+                0x008002a8                Serial
+ .bss           0x008002bb        0x0 ./Print.o
+ .bss           0x008002bb        0x4 ./WInterrupts.o
+ .bss           0x008002bf        0x0 ./WMath.o
+ .bss           0x008002bf        0x0 ./main.o
+ .bss           0x008002bf        0x0 ./motorcontrol.o
+ .bss           0x008002bf        0x0 ./pins_arduino.o
+ .bss           0x008002bf        0x0 ./pwm.o
+ .bss           0x008002bf        0x9 ./wiring.o
+                0x008002bf                timer0_overflow_count
+                0x008002c3                timer0_millis
+ .bss           0x008002c8        0x0 ./wiring_analog.o
+ .bss           0x008002c8        0x0 ./wiring_digital.o
+ .bss           0x008002c8        0x0 ./wiring_pulse.o
+ .bss           0x008002c8        0x0 ./wiring_shift.o
+ .bss           0x008002c8        0x0 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_mulsi3.o)
+ .bss           0x008002c8        0x0 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_divmodhi4.o)
+ .bss           0x008002c8        0x0 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_udivmodsi4.o)
+ .bss           0x008002c8        0x0 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_divmodsi4.o)
+ .bss           0x008002c8        0x0 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_exit.o)
+ .bss           0x008002c8        0x0 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_copy_data.o)
+ .bss           0x008002c8        0x0 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_clear_bss.o)
+ .bss           0x008002c8        0x0 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_ctors.o)
+ .bss           0x008002c8        0x0 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_fixunssfsi.o)
+ .bss           0x008002c8        0x0 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_addsub_sf.o)
+ .bss           0x008002c8        0x0 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_mul_sf.o)
+ .bss           0x008002c8        0x0 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_div_sf.o)
+ .bss           0x008002c8        0x0 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_ge_sf.o)
+ .bss           0x008002c8        0x0 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_lt_sf.o)
+ .bss           0x008002c8        0x0 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_si_to_sf.o)
+ .bss           0x008002c8        0x0 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_sf_to_si.o)
+ .bss           0x008002c8        0x0 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_thenan_sf.o)
+ .bss           0x008002c8        0x0 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_usi_to_sf.o)
+ .bss           0x008002c8        0x0 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_udivmodhi4.o)
+ .bss           0x008002c8        0x0 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_prologue.o)
+ .bss           0x008002c8        0x0 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_epilogue.o)
+ .bss           0x008002c8        0x0 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_tablejump.o)
+ .bss           0x008002c8        0x0 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_clzsi2.o)
+ .bss           0x008002c8        0x0 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_pack_sf.o)
+ .bss           0x008002c8        0x0 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_unpack_sf.o)
+ .bss           0x008002c8        0x0 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_fpcmp_parts_sf.o)
+ .bss           0x008002c8        0x0 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_clz.o)
+ .bss           0x008002c8        0x0 /usr/lib/gcc/avr/4.3.3/../../../avr/lib/avr5/libc.a(random.o)
+ *(.bss*)
+ *(COMMON)
+                0x008002c8                PROVIDE (__bss_end, .)
+                0x00002414                __data_load_start = LOADADDR (.data)
+                0x00002538                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x008002c8        0x0
+                0x008002c8                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x008002c8                PROVIDE (__noinit_end, .)
+                0x008002c8                _end = .
+                0x008002c8                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab           0x00000000      0x9e4
+ *(.stab)
+ .stab          0x00000000      0x6b4 /usr/lib/gcc/avr/4.3.3/../../../avr/lib/avr5/crtm168.o
+ .stab          0x000006b4      0x330 /usr/lib/gcc/avr/4.3.3/../../../avr/lib/avr5/libc.a(random.o)
+                                0x33c (size before relaxing)
+
+.stabstr        0x00000000      0x4aa
+ *(.stabstr)
+ .stabstr       0x00000000      0x4aa /usr/lib/gcc/avr/4.3.3/../../../avr/lib/avr5/crtm168.o
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info)
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(ArduinoTemplate.elf elf32-avr)
+LOAD linker stubs
+
+Cross Reference Table
+
+Symbol                                            File
+HardwareSerial::HardwareSerial(ring_buffer*, unsigned char volatile*, unsigned char volatile*, unsigned char volatile*, unsigned char volatile*, unsigned char volatile*, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char) ./HardwareSerial.o
+HardwareSerial::HardwareSerial(ring_buffer*, unsigned char volatile*, unsigned char volatile*, unsigned char volatile*, unsigned char volatile*, unsigned char volatile*, unsigned char, unsigned char, unsigned char, unsigned char, unsigned char) ./HardwareSerial.o
+HardwareSerial::available()                       ./HardwareSerial.o
+HardwareSerial::begin(long)                       ./HardwareSerial.o
+HardwareSerial::flush()                           ./HardwareSerial.o
+HardwareSerial::read()                            ./HardwareSerial.o
+HardwareSerial::write(unsigned char)              ./HardwareSerial.o
+Print::print(char const*)                         ./Print.o
+Print::print(char)                                ./Print.o
+Print::print(double)                              ./Print.o
+Print::print(int)                                 ./Print.o
+Print::print(long)                                ./Print.o
+Print::print(long, int)                           ./Print.o
+Print::print(unsigned char)                       ./Print.o
+Print::print(unsigned int)                        ./Print.o
+Print::print(unsigned long)                       ./Print.o
+Print::printFloat(double, unsigned char)          ./Print.o
+Print::printNumber(unsigned long, unsigned char)  ./Print.o
+Print::println()                                  ./Print.o
+Print::println(char const*)                       ./Print.o
+Print::println(char)                              ./Print.o
+Print::println(double)                            ./Print.o
+Print::println(int)                               ./Print.o
+Print::println(long)                              ./Print.o
+Print::println(long, int)                         ./Print.o
+Print::println(unsigned char)                     ./Print.o
+Print::println(unsigned int)                      ./Print.o
+Print::println(unsigned long)                     ./Print.o
+Print::write(char const*)                         ./Print.o
+                                                  ./HardwareSerial.o
+Print::write(unsigned char const*, unsigned int)  ./Print.o
+                                                  ./HardwareSerial.o
+Serial                                            ./HardwareSerial.o
+__addsf3                                          /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_addsub_sf.o)
+                                                  ./Print.o
+__bad_interrupt                                   /usr/lib/gcc/avr/4.3.3/../../../avr/lib/avr5/crtm168.o
+__bss_end                                         /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_clear_bss.o)
+__bss_start                                       /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_clear_bss.o)
+__clz_tab                                         /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_clz.o)
+                                                  /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_clzsi2.o)
+__clzsi2                                          /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_clzsi2.o)
+                                                  /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_usi_to_sf.o)
+                                                  /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_si_to_sf.o)
+__ctors_end                                       /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_ctors.o)
+__ctors_start                                     /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_ctors.o)
+__cxa_pure_virtual                                ./main.o
+                                                  ./Print.o
+__data_end                                        /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_copy_data.o)
+__data_load_start                                 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_copy_data.o)
+__data_start                                      /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_copy_data.o)
+__divmodhi4                                       /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_divmodhi4.o)
+                                                  ./HardwareSerial.o
+__divmodsi4                                       /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_divmodsi4.o)
+                                                  /usr/lib/gcc/avr/4.3.3/../../../avr/lib/avr5/libc.a(random.o)
+                                                  ./WMath.o
+__divsf3                                          /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_div_sf.o)
+                                                  ./Print.o
+__do_clear_bss                                    /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_clear_bss.o)
+                                                  /usr/lib/gcc/avr/4.3.3/../../../avr/lib/avr5/libc.a(random.o)
+                                                  /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_clz.o)
+                                                  /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_fpcmp_parts_sf.o)
+                                                  /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_unpack_sf.o)
+                                                  /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_pack_sf.o)
+                                                  /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_clzsi2.o)
+                                                  /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_usi_to_sf.o)
+                                                  /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_thenan_sf.o)
+                                                  /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_sf_to_si.o)
+                                                  /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_si_to_sf.o)
+                                                  /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_lt_sf.o)
+                                                  /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_ge_sf.o)
+                                                  /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_div_sf.o)
+                                                  /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_mul_sf.o)
+                                                  /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_addsub_sf.o)
+                                                  /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_fixunssfsi.o)
+                                                  ./wiring_shift.o
+                                                  ./wiring_pulse.o
+                                                  ./wiring_digital.o
+                                                  ./wiring_analog.o
+                                                  ./wiring.o
+                                                  ./pwm.o
+                                                  ./pins_arduino.o
+                                                  ./motorcontrol.o
+                                                  ./main.o
+                                                  ./WMath.o
+                                                  ./WInterrupts.o
+                                                  ./Print.o
+                                                  ./HardwareSerial.o
+__do_copy_data                                    /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_copy_data.o)
+                                                  /usr/lib/gcc/avr/4.3.3/../../../avr/lib/avr5/libc.a(random.o)
+                                                  /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_clz.o)
+                                                  /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_fpcmp_parts_sf.o)
+                                                  /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_unpack_sf.o)
+                                                  /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_pack_sf.o)
+                                                  /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_clzsi2.o)
+                                                  /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_usi_to_sf.o)
+                                                  /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_thenan_sf.o)
+                                                  /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_sf_to_si.o)
+                                                  /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_si_to_sf.o)
+                                                  /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_lt_sf.o)
+                                                  /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_ge_sf.o)
+                                                  /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_div_sf.o)
+                                                  /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_mul_sf.o)
+                                                  /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_addsub_sf.o)
+                                                  /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_fixunssfsi.o)
+                                                  ./wiring_shift.o
+                                                  ./wiring_pulse.o
+                                                  ./wiring_digital.o
+                                                  ./wiring_analog.o
+                                                  ./wiring.o
+                                                  ./pwm.o
+                                                  ./pins_arduino.o
+                                                  ./motorcontrol.o
+                                                  ./main.o
+                                                  ./WMath.o
+                                                  ./WInterrupts.o
+                                                  ./Print.o
+                                                  ./HardwareSerial.o
+__do_global_ctors                                 /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_ctors.o)
+                                                  ./HardwareSerial.o
+__epilogue_restores__                             /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_epilogue.o)
+                                                  /usr/lib/gcc/avr/4.3.3/../../../avr/lib/avr5/libc.a(random.o)
+                                                  /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_usi_to_sf.o)
+                                                  /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_sf_to_si.o)
+                                                  /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_si_to_sf.o)
+                                                  /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_lt_sf.o)
+                                                  /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_ge_sf.o)
+                                                  /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_div_sf.o)
+                                                  /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_mul_sf.o)
+                                                  /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_addsub_sf.o)
+__fixsfsi                                         /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_sf_to_si.o)
+                                                  /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_fixunssfsi.o)
+                                                  ./Print.o
+__fixunssfsi                                      /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_fixunssfsi.o)
+                                                  ./Print.o
+__floatsisf                                       /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_si_to_sf.o)
+                                                  ./Print.o
+__floatunsisf                                     /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_usi_to_sf.o)
+                                                  ./Print.o
+__fpcmp_parts_f                                   /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_fpcmp_parts_sf.o)
+                                                  /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_lt_sf.o)
+                                                  /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_ge_sf.o)
+__gesf2                                           /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_ge_sf.o)
+                                                  /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_fixunssfsi.o)
+__heap_end                                        /usr/lib/gcc/avr/4.3.3/../../../avr/lib/avr5/crtm168.o
+__init                                            /usr/lib/gcc/avr/4.3.3/../../../avr/lib/avr5/crtm168.o
+__ltsf2                                           /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_lt_sf.o)
+                                                  ./Print.o
+__mulsf3                                          /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_mul_sf.o)
+                                                  ./Print.o
+__mulsi3                                          /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_mulsi3.o)
+                                                  /usr/lib/gcc/avr/4.3.3/../../../avr/lib/avr5/libc.a(random.o)
+                                                  ./wiring_pulse.o
+                                                  ./WMath.o
+                                                  ./HardwareSerial.o
+__pack_f                                          /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_pack_sf.o)
+                                                  /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_usi_to_sf.o)
+                                                  /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_si_to_sf.o)
+                                                  /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_div_sf.o)
+                                                  /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_mul_sf.o)
+                                                  /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_addsub_sf.o)
+__prologue_saves__                                /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_prologue.o)
+                                                  /usr/lib/gcc/avr/4.3.3/../../../avr/lib/avr5/libc.a(random.o)
+                                                  /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_usi_to_sf.o)
+                                                  /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_sf_to_si.o)
+                                                  /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_si_to_sf.o)
+                                                  /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_lt_sf.o)
+                                                  /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_ge_sf.o)
+                                                  /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_div_sf.o)
+                                                  /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_mul_sf.o)
+                                                  /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_addsub_sf.o)
+__stack                                           /usr/lib/gcc/avr/4.3.3/../../../avr/lib/avr5/crtm168.o
+__subsf3                                          /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_addsub_sf.o)
+                                                  /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_fixunssfsi.o)
+                                                  ./Print.o
+__tablejump2__                                    /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_tablejump.o)
+__tablejump__                                     /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_tablejump.o)
+                                                  /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_ctors.o)
+__thenan_sf                                       /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_thenan_sf.o)
+                                                  /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_div_sf.o)
+                                                  /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_mul_sf.o)
+                                                  /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_addsub_sf.o)
+__udivmodhi4                                      /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_udivmodhi4.o)
+                                                  /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_divmodhi4.o)
+__udivmodsi4                                      /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_udivmodsi4.o)
+                                                  /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_divmodsi4.o)
+                                                  ./Print.o
+                                                  ./HardwareSerial.o
+__unpack_f                                        /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_unpack_sf.o)
+                                                  /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_sf_to_si.o)
+                                                  /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_lt_sf.o)
+                                                  /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_ge_sf.o)
+                                                  /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_div_sf.o)
+                                                  /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_mul_sf.o)
+                                                  /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_addsub_sf.o)
+__vector_1                                        ./WInterrupts.o
+                                                  /usr/lib/gcc/avr/4.3.3/../../../avr/lib/avr5/crtm168.o
+__vector_10                                       /usr/lib/gcc/avr/4.3.3/../../../avr/lib/avr5/crtm168.o
+__vector_11                                       /usr/lib/gcc/avr/4.3.3/../../../avr/lib/avr5/crtm168.o
+__vector_12                                       /usr/lib/gcc/avr/4.3.3/../../../avr/lib/avr5/crtm168.o
+__vector_13                                       /usr/lib/gcc/avr/4.3.3/../../../avr/lib/avr5/crtm168.o
+__vector_14                                       /usr/lib/gcc/avr/4.3.3/../../../avr/lib/avr5/crtm168.o
+__vector_15                                       /usr/lib/gcc/avr/4.3.3/../../../avr/lib/avr5/crtm168.o
+__vector_16                                       ./wiring.o
+                                                  /usr/lib/gcc/avr/4.3.3/../../../avr/lib/avr5/crtm168.o
+__vector_17                                       /usr/lib/gcc/avr/4.3.3/../../../avr/lib/avr5/crtm168.o
+__vector_18                                       ./HardwareSerial.o
+                                                  /usr/lib/gcc/avr/4.3.3/../../../avr/lib/avr5/crtm168.o
+__vector_19                                       /usr/lib/gcc/avr/4.3.3/../../../avr/lib/avr5/crtm168.o
+__vector_2                                        ./WInterrupts.o
+                                                  /usr/lib/gcc/avr/4.3.3/../../../avr/lib/avr5/crtm168.o
+__vector_20                                       /usr/lib/gcc/avr/4.3.3/../../../avr/lib/avr5/crtm168.o
+__vector_21                                       /usr/lib/gcc/avr/4.3.3/../../../avr/lib/avr5/crtm168.o
+__vector_22                                       /usr/lib/gcc/avr/4.3.3/../../../avr/lib/avr5/crtm168.o
+__vector_23                                       /usr/lib/gcc/avr/4.3.3/../../../avr/lib/avr5/crtm168.o
+__vector_24                                       /usr/lib/gcc/avr/4.3.3/../../../avr/lib/avr5/crtm168.o
+__vector_25                                       /usr/lib/gcc/avr/4.3.3/../../../avr/lib/avr5/crtm168.o
+__vector_3                                        /usr/lib/gcc/avr/4.3.3/../../../avr/lib/avr5/crtm168.o
+__vector_4                                        /usr/lib/gcc/avr/4.3.3/../../../avr/lib/avr5/crtm168.o
+__vector_5                                        /usr/lib/gcc/avr/4.3.3/../../../avr/lib/avr5/crtm168.o
+__vector_6                                        /usr/lib/gcc/avr/4.3.3/../../../avr/lib/avr5/crtm168.o
+__vector_7                                        /usr/lib/gcc/avr/4.3.3/../../../avr/lib/avr5/crtm168.o
+__vector_8                                        /usr/lib/gcc/avr/4.3.3/../../../avr/lib/avr5/crtm168.o
+__vector_9                                        /usr/lib/gcc/avr/4.3.3/../../../avr/lib/avr5/crtm168.o
+__vector_default                                  /usr/lib/gcc/avr/4.3.3/../../../avr/lib/avr5/crtm168.o
+__vectors                                         /usr/lib/gcc/avr/4.3.3/../../../avr/lib/avr5/crtm168.o
+_div                                              /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_divmodhi4.o)
+_exit                                             /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_exit.o)
+analogRead                                        ./wiring_analog.o
+analogReference                                   ./wiring_analog.o
+analogWrite                                       ./wiring_analog.o
+analog_reference                                  ./wiring_analog.o
+attachInterrupt                                   ./WInterrupts.o
+delay                                             ./wiring.o
+delayMicroseconds                                 ./wiring.o
+detachInterrupt                                   ./WInterrupts.o
+digitalRead                                       ./wiring_digital.o
+digitalWrite                                      ./wiring_digital.o
+                                                  ./wiring_shift.o
+                                                  ./wiring_analog.o
+digital_pin_to_bit_mask_PGM                       ./pins_arduino.o
+                                                  ./wiring_pulse.o
+                                                  ./wiring_digital.o
+digital_pin_to_port_PGM                           ./pins_arduino.o
+                                                  ./wiring_pulse.o
+                                                  ./wiring_digital.o
+digital_pin_to_timer_PGM                          ./pins_arduino.o
+                                                  ./wiring_digital.o
+                                                  ./wiring_analog.o
+dutyCyclePWM1                                     ./pwm.o
+                                                  ./motorcontrol.o
+dutyCyclePWM2                                     ./pwm.o
+                                                  ./motorcontrol.o
+exit                                              /usr/lib/gcc/avr/4.3.3/avr5/libgcc.a(_exit.o)
+                                                  /usr/lib/gcc/avr/4.3.3/../../../avr/lib/avr5/crtm168.o
+init                                              ./wiring.o
+                                                  ./main.o
+initMotor1                                        ./motorcontrol.o
+initMotor1()                                      ./main.o
+initMotor2                                        ./motorcontrol.o
+initMotor2()                                      ./main.o
+initPWM                                           ./pwm.o
+                                                  ./motorcontrol.o
+initPWM()                                         ./main.o
+invertPWM1                                        ./pwm.o
+                                                  ./motorcontrol.o
+invertPWM2                                        ./pwm.o
+                                                  ./motorcontrol.o
+limitSpeedMax                                     ./motorcontrol.o
+main                                              ./main.o
+                                                  /usr/lib/gcc/avr/4.3.3/../../../avr/lib/avr5/crtm168.o
+makeWord(unsigned char, unsigned char)            ./WMath.o
+makeWord(unsigned int)                            ./WMath.o
+map(long, long, long, long, long)                 ./WMath.o
+micros                                            ./wiring.o
+millis                                            ./wiring.o
+motor1Forward                                     ./motorcontrol.o
+motor1Forward(int)                                ./main.o
+motor1Reverse                                     ./motorcontrol.o
+motor1SetSpeed                                    ./motorcontrol.o
+motor2Forward                                     ./motorcontrol.o
+motor2Forward(int)                                ./main.o
+motor2Reverse                                     ./motorcontrol.o
+motor2SetSpeed                                    ./motorcontrol.o
+nonInvertPWM1                                     ./pwm.o
+                                                  ./motorcontrol.o
+nonInvertPWM2                                     ./pwm.o
+                                                  ./motorcontrol.o
+pinMode                                           ./wiring_digital.o
+                                                  ./wiring_analog.o
+port_to_input_PGM                                 ./pins_arduino.o
+                                                  ./wiring_pulse.o
+                                                  ./wiring_digital.o
+port_to_mode_PGM                                  ./pins_arduino.o
+                                                  ./wiring_digital.o
+port_to_output_PGM                                ./pins_arduino.o
+                                                  ./wiring_digital.o
+pulseIn                                           ./wiring_pulse.o
+random                                            /usr/lib/gcc/avr/4.3.3/../../../avr/lib/avr5/libc.a(random.o)
+                                                  ./WMath.o
+random(long)                                      ./WMath.o
+random(long, long)                                ./WMath.o
+randomSeed(unsigned int)                          ./WMath.o
+random_r                                          /usr/lib/gcc/avr/4.3.3/../../../avr/lib/avr5/libc.a(random.o)
+rx_buffer                                         ./HardwareSerial.o
+shiftOut                                          ./wiring_shift.o
+srandom                                           /usr/lib/gcc/avr/4.3.3/../../../avr/lib/avr5/libc.a(random.o)
+                                                  ./WMath.o
+timer0_millis                                     ./wiring.o
+timer0_overflow_count                             ./wiring.o
+vtable for HardwareSerial                         ./HardwareSerial.o
+vtable for Print                                  ./Print.o
