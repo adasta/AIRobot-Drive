@@ -18,31 +18,50 @@ int main(void)
 	initEncoders();
 	initCom();
 
-	Serial.begin(9600);
-
-Serial.println("hello start");
-fprintf(uart, "Hello From New transmision scheme\n");
+	Serial.begin(57600);
 
 setLeftMotorSpeed(0);
 setRightMotorSpeed(0);
+DDRD &= ~_BV(PIN1);
+
 
 while(1==1){
-	delay(1000);
-	Serial.print("EL : ");
-	Serial.print(Robot.leftWheel.encoder.count());
-	Serial.println(" ");
-	Serial.print("RL : " );
-	Serial.print(Robot.rightWheel.encoder.count());
-	Serial.println(  " ");
-
 	if(messageAvailable()){
 		char * message = getMessage();
 		char command[20];
 		int L, R;
 		sscanf(message,"%s %d %d", command, &L, &R);
-		setLeftMotorSpeed(L);
-		setRightMotorSpeed(R);
-		fprintf(uart, "%s\n", message);
+
+		if (command[0] == 'W'){
+			DDRD |= _BV(PIN1);
+			fprintf(uart, "%s %d %d\n", command, L, R);
+			DDRD &= ~_BV(PIN1);
+
+			while (!messageAvailable());
+
+			char ack[10];
+			sscanf(getMessage(), " %s", ack);
+			if (ack[0] == 'A'){
+				setLeftMotorSpeed(L);
+				setRightMotorSpeed(R);
+			}
+		}
+
+		if (command[0] == 'E'){
+			DDRD |= _BV(PIN1);
+			int Le = Robot.leftWheel.encoder.count();
+			int Re = Robot.rightWheel.encoder.count();
+			fprintf(uart, "E %d %d\n", Le, Re);
+			DDRD &= ~_BV(PIN1);
+		}
+		if ((command[0] == 'C') && (command[1] == 'E')){
+			Robot.leftWheel.encoder.clearCount();
+			Robot.rightWheel.encoder.clearCount();
+			DDRD |= _BV(PIN1);
+			fprintf(uart, "CE\n", L, R);
+			DDRD &= ~_BV(PIN1);
+		}
+
 	}
 }
 

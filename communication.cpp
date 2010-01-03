@@ -7,6 +7,7 @@
 #include "communication.h"
 #include "HardwareSerial.h"
 #include <stdio.h>
+#include <avr/io.h>
 
 
 FILE * uart;
@@ -16,7 +17,9 @@ int messageDone;
 
 int writeChar(char c , FILE * stream){
 
+
 	Serial.write(c);
+
 
 	return 0;
 }

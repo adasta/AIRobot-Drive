@@ -50,7 +50,7 @@ void initEncoders()
 
 ISR(PCINT2_vect){
 	Robot.rightWheel.encoder.update(bit_is_set(PIND, PIN5), bit_is_set(PIND, PIN4));
-	Robot.leftWheel.encoder.update( bit_is_set(PIND, PIN3), bit_is_set(PIND, PIN2));
+	Robot.leftWheel.encoder.update( bit_is_set(PIND, PIN2), bit_is_set(PIND, PIN3));
 }
 
 

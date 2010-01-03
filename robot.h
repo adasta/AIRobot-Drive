@@ -18,8 +18,6 @@
 #define EncoderPulsesPerRevolution 564
 #define wheelDiameter 6.0325 //cm  (2.375 inches)
 #define EncoderPulsePerCm EncoderPulsesPerRevolution/(wheelDiameter*2*3.14)
-#define motorBacklashCM 1.9 //CM
-#define motorBacklashEncoderCounts motorBacklashCM * EncoderPulsePerCm
 
 
 void RobotInit();
