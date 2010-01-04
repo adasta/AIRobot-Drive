@@ -137,7 +137,7 @@ ISR(TIMER2_OVF_vect)   // feed back loop interrupt
 		}
 		else
 		{
-			motor1SetSpeed(Robot.leftWheel.pwmPeriod);
+			motor1SetSpeed(-Robot.leftWheel.pwmPeriod);
 		}
 		if((Robot.rightWheel.velD == 0) && (abs(Robot.rightWheel.pwmPeriod) < 30))
 		{
