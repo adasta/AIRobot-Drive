@@ -17,13 +17,15 @@
 #define feedBackLoopFrequency 30.5
 #define EncoderPulsesPerRevolution 564
 #define wheelDiameter 6.0325 //cm  (2.375 inches)
-#define EncoderPulsePerCm EncoderPulsesPerRevolution/(wheelDiameter*2*3.14)
+#define encoderCorrectionFactor 80/63
+#define EncoderPulsePerCm (EncoderPulsesPerRevolution/(wheelDiameter*3.14) * encoderCorrectionFactor)
+#define velEncoderPerCm  EncoderPulsePerCm/feedBackLoopFrequency
 
 
 void RobotInit();
 
   struct robotState  //standard robot has ultrasound and speed controlled wheels
-{
+{		int stuff;
 		struct wheel
 		{
 			int kpGain;  // proportional gain constant
@@ -49,8 +51,8 @@ extern robotState Robot;
  void initEncoders();
  void initSpeedControl();
 
- void setLeftMotorSpeed(float cmPerSec);
- void setRightMotorSpeed(float cmPerSec);
+ void setLeftMotorSpeed(int cmPerSec);
+ void setRightMotorSpeed(int cmPerSec);
  void move(float cmPerSec, float distanceCM);
  void turn(float cmPerSec, int AngleDegrees);
 

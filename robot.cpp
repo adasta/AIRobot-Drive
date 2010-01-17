@@ -64,7 +64,7 @@ void initSpeedControl()
 	//Feed back is going to be set for a prescaller of 1024 on a 8 bit timer, feed back loop is
 	//  32.8 miliseoncs
 
-	TCCR2B = 0b00000101;
+	TCCR2B = 0b00000111;
 	TCNT2 = 0;
 	TIMSK2 = _BV(TOIE2);  // Set interrupt on compare match
 
@@ -91,7 +91,8 @@ void initSpeedControl()
 
 ISR(TIMER2_OVF_vect)   // feed back loop interrupt
 {
-	TCNT2 = 0;      // Feedbackloop modifies every 32.8 miliseconds
+	//TCNT2 = 0;      // Feedbackloop modifies every 32.8 miliseconds
+	Robot.stuff++;
 
 	if (Robot.feedbackState == 1){
 
@@ -145,16 +146,6 @@ ISR(TIMER2_OVF_vect)   // feed back loop interrupt
 		}
 		else motor2SetSpeed(Robot.rightWheel.pwmPeriod);
 
-
-	//	if (Robot.leftWheel.encoder.count() > 10000){  // clear count to prevent weird overflow issues
-		//	Robot.leftWheel.encoder.clearCount();
-			//Robot.leftWheel.previousCount = 0;
-	//	}
-		//if (Robot.rightWheel.encoder.count() > 10000){
-			//Robot.rightWheel.encoder.clearCount();
-		//	Robot.rightWheel.previousCount = 0;
-		//}
-
 		Robot.feedbackState =0;
 
 	} // end if of feedback state 1
@@ -188,13 +179,11 @@ void setMovement(int movementCounts)
 	}
 
 
-void setLeftMotorSpeed(float cmPerSec)
+void setLeftMotorSpeed(int cmPerSec)
 {
-	cmPerSec = -cmPerSec;
+	cmPerSec = cmPerSec;
 	if (cmPerSec > 100) cmPerSec = 100;
 	if (cmPerSec< -100) cmPerSec = -100;;
-	int encoderCountsPerSec = (int)(cmPerSec*EncoderPulsePerCm);
-
 /*	if ((Robot.leftWheel.blacklashFlag == 1) && (cmPerSec <0)){  //new speed is backwards
 																// i was going forwards
 		Robot.leftWheel.blacklashFlag = 0;
@@ -207,16 +196,15 @@ void setLeftMotorSpeed(float cmPerSec)
 	*/
 
 	Robot.leftWheel.velCM = cmPerSec;
-	Robot.leftWheel.velD =  encoderCountsPerSec/feedBackLoopFrequency;
+	Robot.leftWheel.velD =  ((cmPerSec) *velEncoderPerCm);
 }
 
-void setRightMotorSpeed(float cmPerSec)
+void setRightMotorSpeed(int cmPerSec)
 {
 	if (cmPerSec > 100) cmPerSec = 100;
 	if (cmPerSec< -100) cmPerSec = -100;
-	int encoderCountsPerSec = (int)(cmPerSec*EncoderPulsePerCm);
 	Robot.rightWheel.velCM = cmPerSec;
-	Robot.rightWheel.velD = encoderCountsPerSec/feedBackLoopFrequency;
+	Robot.rightWheel.velD = cmPerSec *velEncoderPerCm;
 }
 
 
